@@ -1,0 +1,16 @@
+/* CandidateDashboard.css */
+.candidate-dashboard-container {
+    padding: 20px;
+    background-color: #ecf0f1;
+    min-height: 100vh;
+  }
+  
+  .candidate-dashboard-container h2 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .candidate-dashboard-container p {
+    font-size: 18px;
+    color: #333;
+  }
