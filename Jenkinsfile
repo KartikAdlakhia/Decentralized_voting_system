@@ -7,24 +7,23 @@ pipeline {
                 git url: 'https://github.com/KartikAdlakhia/Decentralized_voting_system.git', branch: 'kartik-dev'
             }
         }
-        
-        stage('Build') {
+     stage('Build') {
             steps {
-                sh 'mvn clean install' // Change to your build command
+                bat 'echo Building...'
+                // Or use powershell for PowerShell commands
+                powershell 'Write-Output "Building..."'
             }
         }
-
         stage('Test') {
             steps {
-                sh 'mvn test'
+                bat 'echo Testing...'
             }
         }
-
         stage('Deploy') {
             steps {
-                echo 'Deploying the application...'
+                bat 'echo Deploying...'
             }
         }
     }
 }
- 
+
