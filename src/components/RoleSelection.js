@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import "./RoleSelection.css"; // Import the CSS file
 
 const RoleSelection = () => {
   const navigate = useNavigate();
@@ -13,12 +14,14 @@ const RoleSelection = () => {
   };
 
   return (
-    <div>
-      <h2>Select Your Role</h2>
-      <button onClick={() => handleRoleSelection("voter")}>I am a Voter</button>
-      <button onClick={() => handleRoleSelection("candidate")}>
-        I am a Candidate
-      </button>
+    <div className="role-selection-container">
+      <div className="role-selection-box">
+        <h2>Select Your Role</h2>
+        <button onClick={() => handleRoleSelection("voter")}>I am a Voter</button>
+        <button onClick={() => handleRoleSelection("candidate")}>
+          I am a Candidate
+        </button>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,27 @@
+/* RoleSelection.css */
+.role-selection-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+  }
+  
+  .role-selection-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .role-selection-box h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .role-selection-box button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 18px;
+  }
