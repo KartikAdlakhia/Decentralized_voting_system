@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/KartikAdlakhia/Decentralized_voting_system/tree/kartik-dev', branch: 'kartik-dev'
+                git url: 'https://github.com/KartikAdlakhia/Decentralized_voting_system.git', branch: 'kartik-dev'
             }
         }
         
